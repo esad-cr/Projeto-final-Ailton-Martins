@@ -7,7 +7,7 @@
   /* NOTE: Using this means the color and background-color are set to transparent for selected text... */
   /* So you can customise your styles below */
   color: #fff;
-  background-color: #00f;
+  background-color: rgb(0, 0, 255);
 }
 
 html {
@@ -95,7 +95,7 @@ iframe, video {
   --black-color-light: hsl(220, 24%, 15%);
   --black-color-lighten: hsl(220, 20%, 18%);
   --white-color: #fff;
-  --body-color: hsla(90, 34%, 63%, .5);
+  --body-color: hsla(34, 71%, 48%, 0.5);
   --primary-color: hsla(9, 73%, 50%, 1);
   --secondary-color: hsla(203, 37%, 22%, 1);
   /*========== Font and typography ==========*/
@@ -296,7 +296,7 @@ h6, .h6{
 }
 
 #headerLogo img {
-  width: 7rem;
+  width: 5rem;
 }
 
 .nav__toggle {
