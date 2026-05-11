@@ -28,29 +28,37 @@
     </head>
 
     <body>
-        <header id="topHeader">
-
-            <div id="headerLogo">
-                <a href="index.html" title="Projeto final - index"  rel="noopener noreferrer"><img src="imagens/logo.png"   alt="Logo ABCD"></a>
-            </div>
-            
+        <header id="topHeader" class="pageWidht">
             <nav id="mainMenu">
+                <div Class="navAction"></div>
+                    <div id="headerLogo">
+                     <a href="index.html" title="Projeto final - index"  rel="noopener noreferrer"><img src="imagens/logo.png"   alt="Logo Ailton Marques Martins Kohana"><strong>Ailton Martins Kohana</strong></a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burguer"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+            
+                
+                <div class="nav__manu" id="navMenu"></div>
 
-                <ul>
-                    <li>
-                        <a href="index.html" title="pagina principal"   rel="noopener noreferrer">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="sobre-mim.html" title="Sobre mim"  rel="noopener noreferrer">Sobre mim</a>
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" title="pagina principal"   rel="noopener noreferrer">Inicio</a>
+                         </li>
+                            <li>
+                            <a href="sobre-mim.html" title="Sobre mim"  rel="noopener noreferrer">Sobre mim</a>
 
-                    </li>
-                    <li>
-                        <a href="projetos.html" title="Os meus projetos"    rel="noopener noreferrer">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Contactos</a>
-                    </li>
-                </ul>
+                         </li>
+                            <li>
+                             <a href="projetos.html" title="Os meus projetos"    rel="noopener noreferrer">Projetos</a>
+                         </li>
+                             <li>
+                            <a href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Contactos</a>
+                        </li>
+                    </ul>
+                </div>     
             </nav>
 
         </header>
@@ -62,6 +70,11 @@
         <footer>
             <p>&copy; - Todos os direitos reservados <b>|</b> 2026 Projeto Final</p>
         </footer>
+        <script src="js/script.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha512-lbO95HE52QWwrDVEaDJmW9Xr8UIfMpRFT3akB8ett7lGfWsrGKz07L6wfwnF3KJ3T4a8cZupAKoI9Q2jH+0QIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="processing/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     </body>
 </html>
