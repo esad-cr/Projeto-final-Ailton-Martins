@@ -280,7 +280,8 @@ h6, .h6{
   width: 100%;
   max-width:1680px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16
+  px;
 }
 
 .nav__burger, 
@@ -289,7 +290,7 @@ h6, .h6{
 }
 
 .navAction {
-  height: 100%;
+  height: 900%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -308,12 +309,13 @@ h6, .h6{
 }
 
 #headerLogo img {
-  width: 5rem;
+  width: 7%;
+  
 }
 
 .nav__toggle {
   position: relative;
-  width: 32px;
+  width: 22px;
   height: 32px;
 }
 
