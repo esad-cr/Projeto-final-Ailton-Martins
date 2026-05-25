@@ -6,7 +6,7 @@ const showMenu = (toggleId, navId) =>{
         nav.classList.toggle('show-menu')
 
         toggle.classList.toggle('show-icon')
-    }
+    })
 }
 
 showMenu('nav-toggle','navMenu')

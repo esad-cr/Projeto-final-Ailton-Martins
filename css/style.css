@@ -271,7 +271,7 @@ h6, .h6{
   width: 100%;
   max-width: 100%;
   background-color: var(--white-color);
-  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.3);
+  box-shadow: 0 px 16px hsla(0, 0%, 0%, 0.3);
   z-index: var(--z-fixed);
 }
 
@@ -280,17 +280,16 @@ h6, .h6{
   width: 100%;
   max-width:1680px;
   margin: 0 auto;
-  padding: 0 16
-  px;
+  padding: 0 16px;
 }
 
 .nav__burger, 
 .nav__close {
-  color: var(--black-color);
+  color: var(--third-color);
 }
 
 .navAction {
-  height: 900%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -309,7 +308,7 @@ h6, .h6{
 }
 
 #headerLogo img {
-  width: 7%;
+  width: 4rem;
   
 }
 
@@ -344,8 +343,8 @@ h6, .h6{
     width: 100%;
     height: calc(100vh - 3.5rem);
     overflow: auto;
-    /*pointer-events: none;
-    opacity: 0;*/
+    pointer-events: none;
+    opacity: 0;
     transition: top .4s, opacity .3s;
   }
   .nav__menu::-webkit-scrollbar {
