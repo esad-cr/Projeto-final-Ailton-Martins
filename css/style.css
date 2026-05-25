@@ -91,13 +91,14 @@ iframe, video {
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --black-color: hsl(220, 24%, 12%);
+  --black-color: hsl(0, 0%, 23%);
   --black-color-light: hsl(220, 24%, 15%);
   --black-color-lighten: hsl(220, 20%, 18%);
-  --white-color: #fff;
-  --body-color: hsla(34, 71%, 48%, 0.5);
+  --white-color: #0b0b0b;
+  --body-color: hsla(0, 0%, 4%, 0.5);
   --primary-color: hsla(9, 73%, 50%, 1);
-  --secondary-color: hsla(203, 37%, 22%, 1);
+  --secondary-color: rgb(255, 255, 255);
+   --third-color: rgb(255, 255, 255);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   /*--body-font: "Montserrat", sans-serif;*/
@@ -218,6 +219,8 @@ h5, .h5{
 h6, .h6{
   font-size: 1.2rem;
 }
+
+
 /*********************************************
 **** Definição da tipografia para desktop *****
 *********************************************/
@@ -247,10 +250,19 @@ h6, .h6{
   }
 }
 
+.text_center{
+  text-align: center;
+}
+.white_text{
+  color: var(--white-color);
+}
+
+.invert_filter{
+  filter: invert(1);
+}
+
 /****************************************
 ********** menu de navegação ************
-****************************************/
-
 /*=============== HEADER ===============*/
 #topHeader {
   position: fixed; /* menu fixo no scroll*/
@@ -259,7 +271,7 @@ h6, .h6{
   width: 100%;
   max-width: 100%;
   background-color: var(--white-color);
-  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.3);
   z-index: var(--z-fixed);
 }
 
@@ -413,8 +425,27 @@ h6, .h6{
 #mainContent {
   margin-top:var(--header-height)!important;
 }/****************************************
-************* mainFooter ***************
+************* cards ***************
 ****************************************/
+.content{
+  --gap: 0;
+  padding: 2rem;
+}
+.flex{
+  display: flex;
+  gap: var(--gap, 1em)
+}
+.box_shadow{
+  box-shadow: 2px 3px 15px 2px rgb(0, 0, 0, 0.52)
+}
+.border_radius{
+  border-radius: 8px;
+
+}
+.flex-column{
+  flex-direction: column;
+  margin-left: auto;
+}
 
 #mainFooter {
   padding: 20px;

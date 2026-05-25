@@ -1,7 +1,7 @@
 # Projeto-final-Ailton-Martins
 Projeto final da UC - Laboratorio de Projeto II
 ## Descrição
-O projeto final tem como objetivo a criação de um portfólio do aluno/a, tendo como base os trabalhos desenvolvidos ao longo da licenciatura.
+O projeto final tem como objetivo a criação de um portfólio , tendo como base os trabalhos desenvolvidos na UC Projeto Design Multimedia IV.
 
 Os trabalhos desenvolvidos na linguagem **Processing** devem estar organizados na página processing.html, sendo apresentados nos respetivos **canvas**.
 
