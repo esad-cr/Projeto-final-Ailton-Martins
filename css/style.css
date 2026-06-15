@@ -101,10 +101,10 @@ iframe, video {
    --gray-light:  #C8C4B8;
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  /*--body-font: "'Archivo Black'", sans-serif;*/
-  /*--font-heading: 'Bebas Neue', cursive;
-  /* --font-body:    'Fira Sans', sans-serif;
-  /*--normal-font-size: .938rem;*/
+  --body-font: "'Archivo Black'", sans-serif;*/
+  --font-heading: 'Bebas Neue', cursive;
+   --font-body:    'Fira Sans', sans-serif;
+  --normal-font-size: .938rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -452,33 +452,7 @@ h6, .h6{
   
 }
 
-/****************************************
-************* cards ***************
-****************************************/
-.content{
-  --gap: 0;
-  padding: 2rem;
-}
-.flex{
-  display: flex;
-  gap: var(--gap, 1em)
-}
-.box_shadow{
-  box-shadow: 2px 3px 15px 2px rgb(0, 0, 0, 0.52)
-}
-.border_radius{
-  border-radius: 8px;
 
-}
-.flex-column{
-  flex-direction: column;
-  margin-left: auto;
-}
-
-#mainFooter {
-  padding: 20px;
-  text-align: center;
-}
 
 /****************************************
 ************* hero ***************
@@ -506,11 +480,12 @@ h6, .h6{
 }
 
 .hero__tittle {
-  font-family: var(--font-heading);
-  font-size: clamp(6.1rem , 10vw, 7.5rem);
-  line-height: 1.03;
-  letter-spacing: -0.06em;
-  color: var(--black);
+  font-family: 'Bebas Neue', cursive;
+    font-size: clamp(5rem, 11vw, 10rem);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    color: #111;
+    text-transform: uppercase;
 }
 
 .hero__tags{
@@ -659,7 +634,7 @@ h6, .h6{
  
 .watermark-letter {
   position: absolute;
-  right: 0.01em;
+  right: 0.07em;
   top: 50%;
   transform: translateY(-50%);
   font-family: var(--font-display);
@@ -672,16 +647,18 @@ h6, .h6{
 }
  
 .hero__tagline {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 1.4rem;
+  font-family: 'Bebas Neue', cursive;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    letter-spacing: 5em;
+    margin-bottom: 1rem;
+    color: #111;
 }
  
 .tagline-text {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   line-height: 1.05;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.01em;
 }
  
 .tagline-text em {
@@ -692,6 +669,7 @@ h6, .h6{
 }
  
 .hero__desc {
+  font-family: 'Archivo Black', sans-serif;
   font-size: 0.95rem;
   line-height: 1.7;
   color: #444;
@@ -699,6 +677,8 @@ h6, .h6{
   position: relative;
   z-index: 1;
   margin-bottom: 1.5rem;
+  
+   
 }
  
 .cta-btn {
@@ -725,26 +705,29 @@ h6, .h6{
 .projects-strip {
   display: flex;
   margin-top: 4rem;
-  flex-direction: row
+  flex-direction: row;
+  margin-inline: 4rem;
+  margin-bottom: 3rem;
 
 }
 
 .projects-strip__header {
+   font-family: 'Bebas Neue', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  padding: -3rem 1rem;
+  padding: -3rem 3rem;
   border-right: 1px solid var(--beige-dark);
 }
 
  
 .projects-title {
-  font-family: var(--font-heading);
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(2rem, 5vw, 2rem);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   color: var(--black);
 }
  
@@ -801,7 +784,7 @@ h6, .h6{
   top: 0;
   left: 0;
   width: 100%;
-  height: 150%;
+  height: 160%;
   object-fit: auto;
   z-index: 0;
 }
@@ -892,6 +875,203 @@ h6, .h6{
   color: var(--beige);
   border-color: var(--black);
 }
+
+
+/* =============================================
+   about me 
+============================================= */
+
+.about-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 80vh;
+        border-bottom: 1px solid #c8bfb0;
+        margin-top: var(--header-height, 4rem);
+      }
+
+      .about-hero__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 2rem 3rem 3rem;
+        border-right: 1px solid #c8bfb0;
+      }
+
+      .about-label {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #888;
+      }
+
+      .about-big-name {
+        font-family: 'Bebas Neue', cursive;
+        font-size: clamp(5rem, 11vw, 10rem);
+        line-height: 0.9;
+        letter-spacing: 0.02em;
+        color: #111;
+        text-transform: uppercase;
+      }
+
+      .about-tags {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      .about-tags span {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #444;
+      }
+
+      .about-hero__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 3rem 3rem 2.5rem;
+        position: relative;
+      }
+
+      .about-watermark {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-family: 'Bebas Neue', cursive;
+        font-size: clamp(6rem, 14vw, 12rem);
+        color: #e8e2d9;
+        line-height: 1;
+        pointer-events: none;
+        user-select: none;
+        z-index: 0;
+      }
+
+      .about-photo {
+        width: 100%;
+        max-width: 340px;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        border: 2px solid #111;
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+
+      .about-photo-placeholder {
+        width: 100%;
+        max-width: 290px;
+        aspect-ratio: 2,5/4;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+      }
+
+      .about-photo-placeholder span {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.2rem;
+        color: #555;
+        letter-spacing: 0.6em;
+      }
+
+      .about-bio {
+        position: relative;
+        z-index: 1;
+      }
+
+      .about-bio h2 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+        color: #111;
+      }
+
+      .about-bio p {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 0.85rem;
+        line-height: 1.7;
+        color: #444;
+        margin-bottom: 0.8rem;
+      }
+
+      .about-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-bottom: 1px solid #c8bfb0;
+      }
+
+      .about-info__block {
+        padding: 2.5rem;
+        border-right: 1px solid #c8bfb0;
+      }
+
+      .about-info__block:last-child {
+        border-right: none;
+      }
+
+      .info-block-label {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #888;
+        margin-bottom: 1.2rem;
+      }
+
+      .info-block-title {
+        font-family: 'Bebas Neue', cursive;
+        font-size: clamp(1.8rem, 3vw, 2.5rem);
+        letter-spacing: 0.05em;
+        color: #111;
+        margin-bottom: 1rem;
+      }
+
+      .skills-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .skills-list li {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 0.8rem;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .skills-list li::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: #e8c840;
+        display: inline-block;
+        flex-shrink: 0;
+      }
+
+      .about-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-top: 1.5rem;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #111;
+        text-decoration: none;
+        border-bottom: 2px solid #e8c840;
+        padding-bottom: 0.2rem;
+      }
+
  
 /* =============================================
    FOOTER
