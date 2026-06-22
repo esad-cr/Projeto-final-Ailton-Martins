@@ -427,9 +427,11 @@ h6, .h6{
     display: none;
   }
   .nav__list {
+    font-family: 'Bebas Neue', cursive;
     height: 100%;
+    font-size: 1.2rem;
     display: flex;
-    column-gap: 3rem;
+    column-gap: 5rem;
   }
   .nav__link {
     height: 100%;
@@ -704,9 +706,9 @@ h6, .h6{
 ============================================= */
 .projects-strip {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 1rem;
   flex-direction: row;
-  margin-inline: 4rem;
+  margin-inline: 0rem;
   margin-bottom: 3rem;
 
 }
@@ -719,16 +721,20 @@ h6, .h6{
   justify-content: center;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  padding: -3rem 3rem;
+  padding: 1rem 3rem;
   border-right: 1px solid var(--beige-dark);
 }
 
  
 .projects-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2rem, 5vw, 2rem);
-  letter-spacing: 0.2em;
+  font-size: clamp(4rem, 10vw, 4rem);
   color: var(--black);
+  font-family: 'Bebas Neue', cursive;
+    line-height: 0.10;
+    letter-spacing: 0.00em;
+    color: #111;
+    text-transform: uppercase;
 }
  
 .projects-count {
@@ -768,7 +774,7 @@ h6, .h6{
 }
  
 .project-thumb {
-  width: 200%;
+  width: 200px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -827,10 +833,11 @@ h6, .h6{
 }
  
 .project-info {
+  font-family: 'Bebas Neue', sans-serif;
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
-  padding: 1.25rem;
+  gap: 3rem;
+  padding: 2.25rem;
 }
  
 .project-num {
@@ -963,20 +970,20 @@ h6, .h6{
       .about-photo-placeholder {
         width: 100%;
         max-width: 290px;
-        aspect-ratio: 2,5/4;
-        background: #111;
+        aspect-ratio: 4/4;
+        background: none;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        z-index: 9;
+        overflow: hidden;
       }
 
       .about-photo-placeholder span {
         font-family: 'Bebas Neue', cursive;
         font-size: 1.2rem;
         color: #555;
-        letter-spacing: 0.6em;
+        letter-spacing: 1.5em;
       }
 
       .about-bio {
