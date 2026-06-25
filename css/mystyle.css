@@ -450,18 +450,11 @@ h6, .h6{
 ****************************************/
 
 #mainContent {
-  margin-top: calc(var(--header-height) + 1rem)!important;
+  margin-top:var(--header-height)!important;
   
 }
 
-@media screen and (min-width: 992px) {
 
-  #mainContent {
-    margin-top: calc(var(--header-height) + 3rem)!important;
-    
-  }
-
-}
 
 /****************************************
 ************* hero ***************

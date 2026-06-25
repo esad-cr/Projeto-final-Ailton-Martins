@@ -10,3 +10,11 @@ const showMenu = (toggleId, navId) =>{
 }
 
 showMenu('nav-toggle','navMenu')
+
+
+
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+
