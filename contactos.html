@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html lang="pt-PT">
     <head>
         <meta charset="UTF-8">
@@ -122,32 +122,36 @@
                 <div class="contact-page__center">
 
                     <div class="collage">
-                        <span class="collage__credit">DESIGN BY NOTLIA</span>
-                        <i class="ri-global-line collage__global-icon"></i>
+                        <img src="imagens/imagem de fundo contactos.png" alt="Colagem de posters e fotografia de Ailton Martins" class="collage__image">
 
-                        <div class="collage__yellow-block"></div>
-                        <i class="ri-asterisk collage__asterisk"></i>
-
-                        <div class="collage__photo-block"></div>
-
-                        <div class="collage__sphere"></div>
-
-                        <div class="collage__mountain"></div>
-
-                        <span class="collage__tag">CREATIVE<br />THINKING</span>
-
-                        <div class="collage__barcode">
-                            <i class="ri-barcode-line"></i>
-                            <span>38.7223° N, 9.1393° W</span>
-                        </div>
-
-                        <a href="#" class="collage__arrow" aria-label="Ver mais">
+                        <a href="#" class="collage__arrow" aria-label="Ver   mais">
                             <i class="ri-arrow-right-up-line"></i>
-                        </a>
+                        </a> 
                      </div>
                 </div>
 
                 <div class="contact-page__right">
+                    <form class="contact-form" onsubmit="return false;">
+                        <label for="nome">NOME</label>
+                        <input type="text" id="nome" name="nome" placeholder="O teu nome">
+
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="O teu email">
+
+                        <label for="assunto">ASSUNTO</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?">
+
+                        <label for="mensagem">MENSAGEM</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreve a tua mensagem..."></textarea>
+
+                        <button type="submit" class="contact-form__submit">ENVIAR MENSAGEM<i class="ri-arrow-right-up-line"></i></button>
+                    </form>
+
+                    <div class="contact-availability">
+                        <span class="contact-availability__icon"><i class="ri-global-line"></i></span>
+                        <span class="contact-availability__text">DISPONIVEL PARA PROJETOS<br />FREELANCE E COLABORAÇÕES</span>
+                        <span class="contact-availability__plus"><i class="ri-add-line"></i></span>
+                    </div>
                     
                 </div>
                 
@@ -166,7 +170,7 @@
         </footer>
         <script src="js/script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-        <script src="processing/script.js></script>
+        <script src="processing/script.js"></script>
 
 
     </body>
